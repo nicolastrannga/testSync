@@ -9,7 +9,7 @@ The application contains Essential JS 2 button component for preview and all com
 To get started you need to clone the `ej2-quickstart` repository and navigate to `ej2-quickstart` location.
 
 ```
-git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
+git clone https://github.com/nicolastrannga/testSync.git quickstart
 cd quickstart
 ```
 
