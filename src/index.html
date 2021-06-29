@@ -3,15 +3,15 @@
 
 <head>
     <title>Essential JS 2</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Essential JS 2" />
-    <meta name="author" content="Syncfusion" />
-    <link rel="shortcut icon" href="resources/favicon.ico" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="description" content="Essential JS 2"/>
+    <meta name="author" content="Syncfusion"/>
+    <link rel="shortcut icon" href="resources/favicon.ico"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 
     <!--style reference from node_modules/@syncfusion/ej2/-->
-    <link href="/styles/styles.css" rel="stylesheet" />
+    <link href="./styles/styles.css" rel="stylesheet"/>
 
     <script src="node_modules/systemjs/dist/system.src.js" type="text/javascript"></script>
     <script src="system.config.js" type="text/javascript"></script>
@@ -19,7 +19,148 @@
 </head>
 
 <body>
-
+<header class="header flex f-column">
+    <div class="flex f-column align-center justify-center logo">
+        <img src="resources/logo.svg" width="100" height="100" alt="logo">
+    </div>
+    <div class="content flex f-column">
+        <div class="option flex f-column text-center">
+            <label for="partenaire">Prestataire</label>
+            <select id="partenaire">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+        </div>
+        <div class="option flex f-column text-center">
+            <label for="partenaire">Site</label>
+            <select id="partenaire">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+        </div>
+        <div class="option flex f-column text-center">
+            <label for="partenaire">Intention</label>
+            <select id="partenaire">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+        </div>
+        <div class="option flex f-column text-center">
+            <label for="partenaire">Thème</label>
+            <select id="partenaire">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+        </div>
+        <div class="option flex f-column text-center">
+            <label for="partenaire">Motif</label>
+            <select id="partenaire">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="content-container">
+        <div class="flex justify-between align-center">
+            <div class="date element">
+                <input id='date-range' type="text"/>
+            </div>
+            <div class="update-at">
+                <p>Dernières mise à jour: 2021-12-30-01h00</p>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="element chart-container">
+                <div class="flex labels">
+                    <label class="month active" for="update_chart">Month</label>
+                    <label class="week" for="update_chart">Week</label>
+                </div>
+                <input style="display: none" id="update_chart" data-js-id="updateChart" type="checkbox">
+                <div id="chart">
+                </div>
+            </div>
+            <div class="element pie-container">
+                <div id="pie">
+                </div>
+            </div>
+        </div>
+        <div class="infos element flex justify-evenly text-center">
+            <div class="info">
+                <p class="title">Stock</p>
+                <p class="value">15</p>
+            </div>
+            <div class="info">
+                <p class="title">Nouveaux cases</p>
+                <p class="value">980</p>
+            </div>
+            <div class="info">
+                <p class="title">15 min</p>
+                <p class="value">92,22%</p>
+            </div>
+            <div class="info">
+                <p class="title">30 min</p>
+                <p class="value">92,22%</p>
+            </div>
+            <div class="info">
+                <p class="title">Routages</p>
+                <p class="value">1,941</p>
+            </div>
+            <div class="info">
+                <p class="title">Engagement</p>
+                <p class="value">-</p>
+            </div>
+        </div>
+        <div class="card-infos flex justify-evenly text-center">
+            <div class="element flex">
+                <div class="flex f-column">
+                    <p class="title">PAIRES</p>
+                    <p class="value">2 785 523</p>
+                </div>
+                <div class="flex f-column">
+                    <p class="title">Ecart % N-1</p>
+                    <p class="percent">-54%</p>
+                </div>
+            </div>
+            <div class="element flex">
+                <div class="flex f-column">
+                    <p class="title">Valo Net</p>
+                    <p class="value">3 851 888 €</p>
+                </div>
+                <div class="flex f-column">
+                    <p class="title">Ecart % N-1</p>
+                    <p class="percent red">-62%</p>
+                </div>
+            </div>
+            <div class="element flex">
+                <div class="flex f-column">
+                    <p class="title">Valo Net</p>
+                    <p class="value">3 927 272 €</p>
+                </div>
+                <div class="flex f-column">
+                    <p class="title">Ecart % N-1</p>
+                    <p class="percent">+62%</p>
+                </div>
+            </div>
+            <div class="element flex">
+                <div class="flex f-column">
+                    <p class="title">Valo Brut</p>
+                    <p class="value">4 711 174 €</p>
+                </div>
+                <div class="flex f-column">
+                    <p class="title">Ecart % N-1</p>
+                    <p class="percent">+63%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 </body>
 
 </html>
